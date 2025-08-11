@@ -1,6 +1,6 @@
 # X/Twitter Non-Follower Exporter script
 
-simple browser script to quickly generate a `.txt` list of all the people you follow on X who dont follow you back. The script is read-only and will not perform any actions like unfollowing or interacting with accounts.
+simple browser script to quickly generate a `.txt` list of all the people on X who dont follow you back. The script is read-only and will not perform any actions like unfollowing or interacting with accounts.
 
 ### Features
 
