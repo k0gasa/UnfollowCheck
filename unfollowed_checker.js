@@ -20,9 +20,7 @@
     }
 
     userCells.forEach(cell => {
-      // This is the new, more robust logic for finding the username.
-      // It finds all links, then finds all spans inside them, and correctly identifies
-      // the last one that starts with '@', which is always the username handle.
+
       const allSpansInLinks = cell.querySelectorAll('a[href] span');
       let usernameElement = null;
 
@@ -33,7 +31,6 @@
           break;
         }
       }
-
       // If we couldn't find a valid username element, skip this cell.
       if (!usernameElement) {
         return;
@@ -83,7 +80,7 @@
   };
 
   const runScript = () => {
-    console.log("Starting script... This may take a few moments as it scrolls through your full 'Following' list.");
+    console.log("Starting script.. This may take a few moments as it scrolls through your full 'Following' list.");
     
     const scrollInterval = setInterval(() => {
       if (state.stopScrolling) {
